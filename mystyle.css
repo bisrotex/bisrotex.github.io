@@ -3,6 +3,9 @@ body {
         background-color: mistyrose;
         text-align:center;
         }
+body {
+        margin:1100px
+        }
     h1 {
             color: palevioletred;
                             }
