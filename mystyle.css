@@ -11,5 +11,8 @@ body {
                             }
     p {
         margin-bottom: 50px;
-            font-size: 30px
+        font-size: 20px
     }     
+    h2 {
+        color:maroon
+    }
