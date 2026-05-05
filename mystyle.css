@@ -14,14 +14,16 @@ body {
     h2 {
         color:maroon
     }
-.img-container {
-  float: right;
-  width: 33.33%;
-  padding: 5px;
+.row {
+  display: flex;
+  gap: 20px;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.column {
+  flex: 50%;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
 }
