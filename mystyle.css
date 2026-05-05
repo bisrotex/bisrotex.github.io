@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 20px;
-    font-family: "Lato", sans-serif;
+     font-family: 'Poppins', sans-serif;
     background-color: mistyrose;
 }
 .content {
@@ -12,6 +12,21 @@ body {
 }
 
 /* Headings */
+h1 {
+ color: #ff66b2;
+ 
+    text-align: center;
+}
+
+h2 {
+    color: #c2185b; /* deep rose */
+    text-align: center;
+}
+
+h3 {
+    color: #ff66b2; /* soft pink */
+    text-align: center;
+}
 .navbar {
     position: sticky;
     top: 0;
