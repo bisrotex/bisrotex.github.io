@@ -34,9 +34,8 @@ p {
     position: sticky;
     top: 0;
 
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-
+    background: white; /* FORCE solid white */
+    
     padding: 15px;
     margin: 0 auto 20px auto;
 
@@ -48,6 +47,8 @@ p {
     gap: 10px;
 
     width: fit-content;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 /* LINKS (normal + visited) */
