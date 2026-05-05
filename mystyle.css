@@ -1,29 +1,47 @@
 body {
-    margin: 100px 300px 100px 300px;
-        font-family: "Lato", sans-serif;
-        background-color: mistyrose;
-        text-align: justify;
-             
-           h1 {
-            color: palevioletred;
-                            }
-            p {
-        margin-bottom: 50px;
-        font-size: 20px
-    }     
-    h2 {
-        color:maroon
-    }
+    margin: 100px 300px;
+    font-family: "Lato", sans-serif;
+    background-color: mistyrose;
+    text-align: justify;
+}
+
+/* Headings */
+h1 {
+    color: palevioletred;
+}
+
+h2 {
+    color: maroon;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: deeppink;
+}
+
+/* Paragraphs */
+p {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+/* Image row layout */
 .row {
-  display: flex;
-  gap: 0px;
+    display: flex;
+    gap: 20px;
 }
 
+/* Each image container */
 .column {
-  flex: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
+/* Images */
 .column img {
-  width: 70%;
-  height: auto;
-]
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
