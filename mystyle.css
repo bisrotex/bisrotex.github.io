@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 20px;
@@ -28,10 +29,7 @@ h3 {
     text-align: center;
 }
 .navbar {
-    position: sticky;
-    top: 0;
-
-    background: white; /* FORCE solid white */
+          background: white; /* FORCE solid white */
     
     padding: 15px;
     margin: 0 auto 20px auto;
@@ -43,7 +41,7 @@ h3 {
     align-items: center;
     gap: 10px;
 
-    width: fit-content;
+    width: 100%;
 
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
@@ -70,8 +68,8 @@ h3 {
 /* CLICK EFFECT */
 .navbar a:active {
     color: #cc005f;
-/* Paragraphs */
 }
+/* Paragraphs */
 p {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -98,4 +96,63 @@ p {
 .column img {
     width: 100%;
     border-radius: 12px;
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        width: 100%;              /* stop shrink weirdness */
+        flex-wrap: wrap;          /* allow multiple rows */
+        justify-content: center;
+        gap: 6px;
+        padding: 10px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+
+    /* TEXT */
+    p {
+        font-size: 16px;          /* 20px is too big on phone */
+        text-align: left;         /* easier to read */
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    /* IMAGES */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ROW LAYOUT → STACK */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+    }
 }
